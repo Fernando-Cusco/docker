@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  app-postgres:
+    image: postgres:10
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+  
+  pg_admin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8090:80"
+    depends_on: 
+      - app-postgres
+    links:
+      - "app-postgres"
+volumes:
+  postgres-data:
