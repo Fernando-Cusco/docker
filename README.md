@@ -19,3 +19,9 @@ https://docs.google.com/presentation/d/1PM4O1nr5a_M58NOm05ncV9VM-cJVsjOEiiSY_5Um
 #### Descargar una imagen desde el repositorio de DockeHub
 
 `$ docker pull postgres`
+
+#### Ejecutar nuestro primer contenedor
+
+##### Imagen "hello'world"
+
+`$ docker run hello-world`
