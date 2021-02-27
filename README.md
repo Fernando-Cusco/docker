@@ -4,4 +4,6 @@ https://docs.google.com/presentation/d/1PM4O1nr5a_M58NOm05ncV9VM-cJVsjOEiiSY_5Um
 
 # Comandos básicos
 
-####Inline code
+#### Muestra información general del servidor y cliente de docker.
+
+`$ docker info`
